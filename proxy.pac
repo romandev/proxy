@@ -4,7 +4,7 @@ function FindProxyForURL(url, host) {
   //}
   
   if (shExpMatch(host, "*.samsung.net")) {
-    return "PROXY 127.0.0.1:44777";
+    return "HTTP 127.0.0.1:44777";
   }
 
   if (shExpMatch(host, "165.213.202.130")) {        // Gerrit
