@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) {
-  //if (shExpMatch(host, "*.sec.samsung.net")) {
-  //  return "SOCKS 127.0.0.1:8080";
-  //}
+  if (shExpMatch(host, "*.sec.samsung.net")) {
+    return "HTTP 127.0.0.1:44777";
+  }
   
   if (shExpMatch(host, "*.samsung.net")) {
     return "HTTP 127.0.0.1:44777";
